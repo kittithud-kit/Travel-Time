@@ -1,0 +1,39 @@
+.menu-item1 {
+  height: 70px;
+  width: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  display: inline-flex;
+  margin: 0px;
+  padding: 40px;
+}
+
+.footer-item {
+  justify-content: center; /*จัดตรงกลาง*/
+  display: flex;
+}
+
+footer {
+  background: linear-gradient(to right, #ffd2f1, #e3f080);
+  display: grid;
+  grid-template-columns: repeat(3, 2fr); /*แบ่งตาราง*/
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.icondata:hover {
+  /*ตัวกำหนดสไตด์*/
+  color: brown;
+  transform: translateY(20px); /*ขยับ*/
+}
+
+.icondata {
+  transition: 0.4s; /*เวลาขยับ*/
+  color: rgb(9, 9, 9);
+  text-decoration: none;
+  justify-self: end;
+}

@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Libre+Baskerville&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+}
+
+.top-header {
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #cbe57b1a,
+    #f1c885ca,
+    #ef9b0aef
+  );
+  height: 70px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  max-width: 100%;
+  z-index: 99;
+  transition: top 0.4s ease-out;
+  font-family: "Kanit", sans-serif;
+}
+
+.top-header.hide {
+  top: -200px;
+}
+
+button {
+  padding: 8px 30px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  position: relative;
+  transition: all 0.25 ease;
+}
+
+.link1:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn1:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.btn1::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.1);
+  background-image: linear-gradient(
+    225deg,
+    #27d86c 0%,
+    #26caf8 50%,
+    #c625d0 100%
+  );
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+
+.link1 {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.containertrl {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-trl ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0 0px;
+}
+.nav-trl ul li {
+  padding: 0px 10px 10px 0px;
+  letter-spacing: 0.5px;
+
+  font-weight: bolder;
+}
+
+img {
+  overflow: clip;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.TRL {
+  margin: 20px;
+  padding-left: 50px;
+}
+.TRL img {
+  width: 100px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1160px) {
+  .nav-trl ul li {
+    padding: 0px 5px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bar {
+    display: block;
+    margin-right: 50px;
+  }
+  .nav-trl {
+    position: absolute;
+    background-color: white;
+    margin-top: 400px;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+  }
+
+  .nav-trl ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .show {
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.85;
+  }
+}

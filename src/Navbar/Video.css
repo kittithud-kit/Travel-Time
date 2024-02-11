@@ -1,0 +1,47 @@
+.video1 {
+  height: 320px;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  background: #ffffff;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.grid-5 {
+  position: relative;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  overflow: hidden;
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: underline;
+  max-width: 100%;
+}
+
+.grid-5:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  border-left: 4px solid black;
+  animation: animate 3s steps(30) infinite alternate; /*ไป-กลับ*/
+  max-width: 100%;
+}
+@keyframes animate {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 700px;
+  }
+}

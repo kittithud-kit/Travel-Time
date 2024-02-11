@@ -1,0 +1,22 @@
+.travel-item img {
+  display: block;
+  width: 360px;
+  height: 260px;
+  cursor: zoom-in;
+  border-radius: 20px;
+  width: 100%;
+}
+
+h4 {
+  margin: 20px;
+}
+
+.travel-item {
+  position: relative;
+  box-shadow: 0 7 10 rgba(0, 0, 0, 0.8);
+  transition: 0.5s ease-in-out;
+}
+
+.travel-item:hover {
+  transform: translateY(30px);
+}

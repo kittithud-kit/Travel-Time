@@ -1,0 +1,99 @@
+:root {
+  --success-color: #21a658;
+  --error-color: #f01e07;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerlogin {
+  width: 400px;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.h2login {
+  text-align: center;
+  margin: 0 0 20px;
+}
+.formlogin {
+  padding: 30px 40px;
+}
+
+.form-control-login {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control-login label {
+  color: #777;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-control-login input {
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.form-control-login input:focus {
+  outline: none;
+}
+
+.form-control-login.success input {
+  border-color: var(--success-color);
+}
+
+.form-control-login.error input {
+  border-color: var(--error-color);
+}
+
+.form-control-login small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control-login.error small {
+  visibility: visible;
+}
+
+.formlogin button {
+  cursor: pointer;
+  background: #777;
+  transition: 0.5s;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px 20px;
+  margin-top: 20px;
+  width: 30%;
+}
+
+.formlogin button:hover {
+  background-image: linear-gradient(
+    225deg,
+    #27d86c 0%,
+    #26caf8 50%,
+    #c625d0 100%
+  );
+}
+
+.alogin {
+  margin-left: 240px;
+  text-decoration: none;
+  color: black;
+}
+.alogin:hover {
+  color: orange;
+}
